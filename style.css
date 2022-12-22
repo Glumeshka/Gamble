@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: block;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background: url(/pic/BG_digit.jpg) bottom no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(156, 255, 220);
+    font-size: 20px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    text-align: center;
+}
+
+#btnLess {
+  background-color: rgb(0, 0, 135);
+  margin-right: 7px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(156, 255, 220);
+  font-size: 18px;
+  border: none;
+}
+
+#btnOver {
+  background-color: rgb(135, 0, 0);
+  margin-left: 7px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(156, 255, 220);
+  font-size: 18px;
+  border: none;
+}
+
+#btnEqual {
+  width: 100px;
+  background-color: rgb(0, 135, 0);
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(156, 255, 220);
+  font-size: 18px;
+  border: none;
+}
+
+#card-body {
+  background-color: rgb(53, 53, 53);
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: none;
+}
+
+#card-body.active {
+  display: block;
+}
+
+#card-header {
+  background-color: rgb(29, 29, 29);
+  padding: 15px 10px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+#btnRetry {
+  margin: auto;
+  background-color: rgb(7, 7, 32);
+  padding: 12px 45px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(156, 255, 220);
+  font-size: 20px;
+  display: none;
+}
+
+#btnRetry.active {
+  display: block;
+}
+
+#answerField {
+  display: none;
+}
+
+#answerField.active {
+  display: block;
+}
+
+#card-header {
+  display: none;
+}
+
+#card-header.active {
+  display: block;
+}
+
+#col {
+  background-color: rgb(53, 53, 53);
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.card {
+  background-color: rgb(53, 53, 53);
+  padding: 0px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.game-card {
+    height: 100vh;
+    font-family: 'Open Sans', monospace;
+}
+
+#newGame {
+  display: block;
+}
+
+#newGame.active {
+  display: none;
+}
+
+#welcome {
+  display: block;
+}
+
+#welcome.active {
+  display: none;
+}
+
+.button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button a {
+  background-color: rgb(7, 7, 32);
+  padding: 12px 45px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(156, 255, 220);
+  font-weight: 500;
+}
+
+.pop_up {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  z-index: 2;
+  transform: translateY(-10.5%) scale(0);
+  transition: .4s ease-in-out;
+}
+
+.pop_up.active {
+  transform: translateY(0%) scale(100%);
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.pop_up_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.pop_up_body {
+  margin: auto;
+  width: 500px;
+  background-color: rgb(58, 58, 58);
+  border-radius: 7px;
+  text-align: center;
+  padding: 50px 15px 50px 10px;
+  position: relative;
+}
+
+.pop_up_body p {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(156, 255, 220);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.pop_up_body input {
+  display: block;
+  margin: 25px auto 0px auto;
+  width: 330px;
+  padding: 17px 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: #595a5c;
+}
+
+.pop_up_body input:focus {
+  outline: none;
+}
+
+.pop_up_body button {
+  cursor: pointer;
+  display: block;
+  width: 330px;
+  margin: 60px auto 0px auto;
+  padding: 20px 0px;
+  font-weight: 500;
+  font-size: 24px;
+  border: none;
+  color: rgb(156, 255, 220);
+  border-radius: 7px;
+  background-color: rgb(21, 61, 62);
+}
